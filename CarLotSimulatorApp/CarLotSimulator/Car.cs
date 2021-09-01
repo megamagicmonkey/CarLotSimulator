@@ -13,6 +13,8 @@ namespace CarLotSimulator
             EngineNoise = "thrumthrumthrum";
             HonkNoise = "vromp";
             IsDriveable = true;
+            CarLot.numberOfCars++;
+            Console.WriteLine($"There are now {CarLot.numberOfCars} car(s) in the car lot.");
         }
         public Car(int year, string make, string model, string engineNoise, string honkNoise, bool isDriveable)
         {
@@ -22,6 +24,8 @@ namespace CarLotSimulator
             EngineNoise = engineNoise;
             HonkNoise = honkNoise;
             IsDriveable = isDriveable;
+            CarLot.numberOfCars++;
+            Console.WriteLine($"There are now {CarLot.numberOfCars} car(s) in the car lot.");
         }
 
         public int Year { get; set; }
